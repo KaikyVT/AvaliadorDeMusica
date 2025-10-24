@@ -1,4 +1,5 @@
 using AvaliarMusica.Data;
+using AvaliarMusica.View;
 
 namespace AvaliarMusica.Controller;
 
@@ -17,6 +18,10 @@ public class MostrarInfoBanda
             Console.WriteLine("Aperte qualquer tecla para voltar ao menu");
             Console.ReadKey();
             return;
+        }
+        if (nome.Equals("/pagination"))
+        {
+            PaginacaoAvaliacoes.Paginacao(bd);
         }
         var bandaMostra = bd.Avaliacoes.FirstOrDefault(n => n.NomeBanda.Equals(nome));
         if (bd.Avaliacoes.Contains(bandaMostra))

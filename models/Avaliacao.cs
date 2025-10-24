@@ -78,8 +78,25 @@ public class Avaliacao
     public void VisualizarInfo()
     {
         Console.WriteLine("==================================================================");
-        Console.WriteLine($"Nome: {NomeBanda} ≈ {NotaBanda.ToString("F2")}");
+        Console.Write($"Nome: {NomeBanda} ≈ ");
+        if (NotaBanda == 10)
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+        else if (NotaBanda >= 8)
+            Console.ForegroundColor = ConsoleColor.Green;
+        else if (NotaBanda >= 6)
+            Console.ForegroundColor = ConsoleColor.Yellow;
+        else if (NotaBanda >= 4)
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+        else if (NotaBanda >= 2)
+            Console.ForegroundColor = ConsoleColor.Red;
+        else
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+        Console.WriteLine(NotaBanda.ToString("F2"));
+        Console.ForegroundColor = ConsoleColor.White;
+        {
 
+        }
+        ;
         int indice = 1;
         foreach (var top in Top5)
         {

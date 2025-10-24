@@ -9,7 +9,10 @@
       "November Rain": 9,
       "Estranged": 8.5
     },
-    "Pros": ["Guitarra muito gostosa de ouvir", "Gosto bastante da voz do Axl"],
+    "Pros": [
+      "Guitarra muito gostosa de ouvir",
+      "Gosto bastante da voz do Axl"
+    ],
     "Contras": [
       "Em Welcome To The Jungle eu tive que ouvir o Axl Rose gemendo no meu ouvido no meio do \u00F4nibus \uD83E\uDD40\uD83D\uDC94"
     ],
@@ -154,6 +157,28 @@
     ],
     "Extras": [
       "Achei curioso que n\u00E3o curti tanto as m\u00FAsicas mais escutadas deles, mas quando foi indo para as menos conhecidas eu gostei mais =)"
+    ]
+  },
+  {
+    "NomeBanda": "Billie Eilish",
+    "NotaBanda": 7.6,
+    "Top5": {
+      "Happier Than Ever": 10,
+      "lovely": 9.5,
+      "bad guy": 9,
+      "when the party is over": 8.5,
+      "What Was I Made For": 8.5
+    },
+    "Pros": [
+      "As m\u00FAsicas s\u00E3o muito tranquilas e calmas",
+      "Pra momentos mais tristes parecem cair bem"
+    ],
+    "Contras": [
+      "As m\u00FAsicas s\u00E3o muito parecidas",
+      "Ela canta sempre com uma voz cansada"
+    ],
+    "Extras": [
+      "Todas as m\u00FAsicas parecem ser feitas pra clipe triste no meio de filmes"
     ]
   }
 ]
