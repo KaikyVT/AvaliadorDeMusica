@@ -21,7 +21,6 @@ public class VerificarEscolha
             {
                 Console.WriteLine("Número inválido...");
                 Thread.Sleep(1000);
-                Console.Clear();
             }
             else
                 return escolha;
