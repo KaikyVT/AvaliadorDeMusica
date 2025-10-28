@@ -9,8 +9,8 @@ public class PaginacaoAvaliacoes
     public static void Paginacao(BD bd)
     {
         const int primeiraPagina = 1;
-        const int tamanhoPagina = 4;
-        int maxPagina = bd.Avaliacoes.Count() / tamanhoPagina;
+        const int tamanhoPagina = 2;
+        int maxPagina = (int)Math.Ceiling((double)bd.Avaliacoes.Count() / tamanhoPagina);
         int paginaAtual = primeiraPagina;
         //Primeira pagina
         var tecla = new ConsoleKey();
@@ -25,6 +25,7 @@ public class PaginacaoAvaliacoes
             {
                 pagina.VisualizarInfo();
             }
+            Console.WriteLine("Pressione ENTER para voltar ao menu!");
             tecla = Console.ReadKey(true).Key;
             if (tecla.Equals(ConsoleKey.RightArrow) && paginaAtual < maxPagina)
                 paginaAtual += 1;

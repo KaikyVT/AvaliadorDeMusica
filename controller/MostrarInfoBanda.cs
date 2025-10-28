@@ -22,6 +22,7 @@ public class MostrarInfoBanda
         if (nome.Equals("/pagination"))
         {
             PaginacaoAvaliacoes.Paginacao(bd);
+            return;
         }
         var bandaMostra = bd.Avaliacoes.FirstOrDefault(n => n.NomeBanda.Equals(nome));
         if (bd.Avaliacoes.Contains(bandaMostra))
