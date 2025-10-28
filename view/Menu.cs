@@ -19,8 +19,9 @@ public class Menu
             Console.WriteLine("[5] Adicionar um Contra em uma avaliação");
             Console.WriteLine("[6] Adicionar um Extra em uma avaliação");
             Console.WriteLine("[7] Adicionar/Modificar um top 5 músicas de uma banda");
+            Console.WriteLine("[8] Modificar a nota de uma banda");
             Console.WriteLine("[0] Sair do programa");
-            escolha = VerificarEscolha.Verificar(0, 7);
+            escolha = VerificarEscolha.Verificar(0, 8);
             switch (escolha)
             {
                 case 1: Avaliar.AvaliarBanda(bd); break;
@@ -30,6 +31,7 @@ public class Menu
                 case 5: AdicionarContra.Adicionar(bd); break;
                 case 6: AdicionarExtra.Adicionar(bd); break;
                 case 7: AdicionarTop5.Adicionar(bd); break;
+                case 8: ModificarNotaBanda.Modificar(bd); break;
                 case 0: return;
                 default: Console.WriteLine("Digite um número válido"); Thread.Sleep(1000); break;
             }

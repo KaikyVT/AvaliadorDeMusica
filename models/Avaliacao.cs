@@ -80,7 +80,7 @@ public class Avaliacao
         Console.WriteLine("==================================================================");
         Console.Write($"Nome: {NomeBanda} ≈ ");
         if (NotaBanda == 10)
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.Blue;
         else if (NotaBanda >= 8)
             Console.ForegroundColor = ConsoleColor.Green;
         else if (NotaBanda >= 6)
@@ -88,7 +88,7 @@ public class Avaliacao
         else if (NotaBanda >= 4)
             Console.ForegroundColor = ConsoleColor.DarkYellow;
         else if (NotaBanda >= 2)
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.DarkGray;
         else
             Console.ForegroundColor = ConsoleColor.DarkRed;
         Console.WriteLine(NotaBanda.ToString("F2"));
