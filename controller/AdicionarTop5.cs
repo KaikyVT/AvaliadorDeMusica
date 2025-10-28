@@ -7,10 +7,10 @@ public class AdicionarTop5
     public static void Adicionar(BD bd)
     {
         Console.Clear();
-        Console.WriteLine("Digite o nome da banda da qual você deseja adicionar/modificar um top 5:");
+        Console.WriteLine("Digite o nome da banda/artista da qual você deseja adicionar/modificar um top 5:");
         string nome = LoopsVerificacao.VerificaNome();
         Console.WriteLine($"Deseja adicionar/modificar um top5 à {nome}?");
-        Console.WriteLine("P.S: Tenha em mente que isso adicionará na primeira avaliação com esse nome de banda!");
+        Console.WriteLine("P.S: Tenha em mente que isso adicionará na primeira avaliação com esse nome de banda/artista!");
         Console.WriteLine("[1] Sim");
         Console.WriteLine("[2] Não");
         int escolha = VerificarEscolha.Verificar(1, 2);

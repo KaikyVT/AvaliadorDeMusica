@@ -13,7 +13,7 @@ public class Avaliar
         var pros = LoopsVerificacao.VerificaAdicionarPro();
         var contras = LoopsVerificacao.VerificaAdicionarContra();
         var extras = LoopsVerificacao.VerificaAdicionarExtra();
-        Console.WriteLine("Deseja montar o top 5 da banda agora?");
+        Console.WriteLine("Deseja montar o top 5 da banda/artista agora?");
         Console.WriteLine("[1] Sim");
         Console.WriteLine("[2] Não");
         Avaliacao avaliacao = new(nome, nota);
@@ -27,7 +27,7 @@ public class Avaliar
             avaliacao.MontarTop5(top5);
         }
         bd.Salvar(avaliacao);
-        Console.WriteLine("Sua banda foi salva!");
+        Console.WriteLine("Sua banda/artista foi salva!");
         avaliacao.VisualizarInfo();
     }
 }

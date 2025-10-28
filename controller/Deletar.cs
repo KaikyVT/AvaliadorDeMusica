@@ -7,10 +7,10 @@ public class Deletar
     public static void DeletarBanda(BD bd)
     {
         Console.Clear();
-        Console.WriteLine("Digite o nome da banda da qual você deseja deletar:");
+        Console.WriteLine("Digite o nome da banda/artista da qual você deseja deletar:");
         string nome = LoopsVerificacao.VerificaNome();
         Console.WriteLine($"Deseja deletar a avaliação de {nome}?");
-        Console.WriteLine("P.S: Tenha em mente que isso apagará qualquer avaliação com esse nome de banda!");
+        Console.WriteLine("P.S: Tenha em mente que isso apagará qualquer avaliação com esse nome de banda/artista!");
         Console.WriteLine("[1] Sim");
         Console.WriteLine("[2] Não");
         int escolha = VerificarEscolha.Verificar(1, 2);

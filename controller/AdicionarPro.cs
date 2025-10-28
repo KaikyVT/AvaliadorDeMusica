@@ -7,10 +7,10 @@ public class AdicionarPro
     public static void Adicionar(BD bd)
     {
         Console.Clear();
-        Console.WriteLine("Digite o nome da banda da qual você deseja adicionar um pro:");
+        Console.WriteLine("Digite o nome da banda/artista da qual você deseja adicionar um pro:");
         string nome = LoopsVerificacao.VerificaNome();
         Console.WriteLine($"Deseja adicionar um pro à {nome}?");
-        Console.WriteLine("P.S: Tenha em mente que isso adicionará na primeira avaliação com esse nome de banda!");
+        Console.WriteLine("P.S: Tenha em mente que isso adicionará na primeira avaliação com esse nome de banda/artista!");
         Console.WriteLine("[1] Sim");
         Console.WriteLine("[2] Não");
         int escolha = VerificarEscolha.Verificar(1, 2);

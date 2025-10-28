@@ -7,7 +7,7 @@ public class MostrarInfoBanda
 {
     public static void SelecionaBanda(BD bd)
     {
-        Console.WriteLine("Digite o nome da banda da qual você deseja adicionar/modificar um top 5:");
+        Console.WriteLine("Digite o nome da banda/artista da qual você deseja adicionar/modificar um top 5:");
         string nome = LoopsVerificacao.VerificaNome();
         if (nome.Equals("/all"))
         {
@@ -28,7 +28,7 @@ public class MostrarInfoBanda
         if (bd.Avaliacoes.Contains(bandaMostra))
             bandaMostra.VisualizarInfo();
         else
-            Console.WriteLine("Não tem essa banda...");
+            Console.WriteLine("Não tem tal banda/artista...");
         Console.WriteLine("Clique em qualquer lugar para voltar para o menu!");
         Console.ReadKey();
         Console.Clear();

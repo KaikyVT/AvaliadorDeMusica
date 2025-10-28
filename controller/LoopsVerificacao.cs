@@ -23,7 +23,7 @@ public class LoopsVerificacao
     {
         while (true)
         {
-            Console.Write("Digite a nota para essa banda:\n> ");
+            Console.Write("Digite a nota para tal banda/artista:\n> ");
             try
             {
                 double nota = double.Parse(Console.ReadLine()!);
