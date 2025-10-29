@@ -1,6 +1,6 @@
 using AvaliarMusica.Data;
 
-namespace AvaliarMusica.Controller;
+namespace AvaliarMusica.View;
 
 public class EstatisticasGerais
 {

@@ -93,10 +93,6 @@ public class Avaliacao
             Console.ForegroundColor = ConsoleColor.DarkRed;
         Console.WriteLine(NotaBanda.ToString("F2"));
         Console.ForegroundColor = ConsoleColor.White;
-        {
-
-        }
-        ;
         int indice = 1;
         foreach (var top in Top5)
         {

@@ -1,7 +1,7 @@
+using AvaliarMusica.Controller;
 using AvaliarMusica.Data;
-using AvaliarMusica.View;
 
-namespace AvaliarMusica.Controller;
+namespace AvaliarMusica.View;
 
 public class MostrarInfoBanda
 {
