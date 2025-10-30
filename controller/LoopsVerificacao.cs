@@ -23,7 +23,7 @@ public class LoopsVerificacao
     {
         while (true)
         {
-            Console.Write("Digite a nota para tal banda/artista:\n> ");
+            Console.Write("Digite a sua nota:\n> ");
             try
             {
                 double nota = double.Parse(Console.ReadLine()!);
@@ -119,7 +119,6 @@ public class LoopsVerificacao
             Console.Clear();
             Console.WriteLine("Digite o nome da música:");
             string nome = VerificaNome();
-            Console.WriteLine("Digite a nota da música");
             double nota = VerificaNota();
             top5.Add(nome, nota);
             indice++;

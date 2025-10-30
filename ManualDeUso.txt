@@ -12,4 +12,6 @@ Coloquei duas opções de comandos para a opção 3 do menu principal (Visualiza
 
 '/pagination' -> Esse comando é similar ao comando '/all', porém fica dividido em páginas de duas bandas/artistas por página. Você pode passar para a próxima página com seta para a direita e voltar para a página anterior com a seta para a esquerda. Caso queira sair do menu de paginação, é só apertar ENTER.
 
+P.S: Eu tenho minhas avaliações aqui, mas deixei o JSON em branco para que você possa preencher suas avaliações sem ficar apagando as minhas =P
+
 Espero que gostem e aceito sugestões de melhorias ou adições 😺!
