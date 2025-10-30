@@ -10,6 +10,8 @@ public class EstatisticasGerais
         var melhorBanda = bd.Avaliacoes.MaxBy(n => n.NotaBanda);
         var piorBanda = bd.Avaliacoes.MinBy(n => n.NotaBanda);
         var mediaBandas = bd.Avaliacoes.Average(n => n.NotaBanda);
+        int quantidadeBandas = bd.Avaliacoes.Count();
+        Console.WriteLine($"😺 -> Nossa base de dados já tem {quantidadeBandas} bandas!");
         Console.WriteLine($"😺 -> A melhor banda/artista de acordo com este que vos fala é {melhorBanda.NomeBanda} com {melhorBanda.NotaBanda} de nota!");
         Console.WriteLine($"😺 -> Já a pior banda/artista de acordo com este que vos fala é {piorBanda.NomeBanda} com {piorBanda.NotaBanda} de nota...");
         Console.WriteLine($"😺 -> A avaliação média registrada é de {mediaBandas:f}");
