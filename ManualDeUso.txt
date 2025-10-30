@@ -1,0 +1,15 @@
+Oi! Boas vindas ao Avaliador de músicas!
+Eu fiz esse projeto para uso pessoal e decidi compartilhar!
+
+A proposta é simples, você escolher uma banda e avaliar uma nota geral, distribuir pontos positivos, negativos e neutros para a banda (podendo ser nulos), além de poder montar um top 5 de músicas favoritas da banda. 
+
+A intenção do menu é permitir o usuário de selecionar dentre diversas opções de personalização da banda. 
+
+=== COMANDOS EXTRAS ===
+Coloquei duas opções de comandos para a opção 3 do menu principal (Visualizar informações de bandas/artistas). Esses comandos são:
+
+'/all' -> Esse comando permite que sejam visualizadas todas as bandas/artistas da base de dados! É um pouco bagunçado, mas permite uma visualização total na tela.
+
+'/pagination' -> Esse comando é similar ao comando '/all', porém fica dividido em páginas de duas bandas/artistas por página. Você pode passar para a próxima página com seta para a direita e voltar para a página anterior com a seta para a esquerda. Caso queira sair do menu de paginação, é só apertar ENTER.
+
+Espero que gostem e aceito sugestões de melhorias ou adições 😺!

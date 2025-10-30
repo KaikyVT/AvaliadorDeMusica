@@ -12,7 +12,6 @@ public class PaginacaoAvaliacoes
         const int tamanhoPagina = 2;
         int maxPagina = (int)Math.Ceiling((double)bd.Avaliacoes.Count() / tamanhoPagina);
         int paginaAtual = primeiraPagina;
-        //Primeira pagina
         var tecla = new ConsoleKey();
         while (tecla != ConsoleKey.Enter)
         {
@@ -25,8 +24,14 @@ public class PaginacaoAvaliacoes
             {
                 pagina.VisualizarInfo();
             }
-            Console.WriteLine("Pressione ENTER para voltar ao menu!");
+            if (paginaAtual == 1)
+                Console.WriteLine("     Pressione ENTER para voltar ao menu!   ->");
+            else if (paginaAtual == maxPagina)
+                Console.WriteLine("<-   Pressione ENTER para voltar ao menu!     ");
+            else
+                Console.WriteLine("<-   Pressione ENTER para voltar ao menu!   ->");
             tecla = Console.ReadKey(true).Key;
+
             if (tecla.Equals(ConsoleKey.RightArrow) && paginaAtual < maxPagina)
                 paginaAtual += 1;
             else if (tecla.Equals(ConsoleKey.LeftArrow) && paginaAtual > primeiraPagina)
