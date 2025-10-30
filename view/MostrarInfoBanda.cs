@@ -11,7 +11,7 @@ public class MostrarInfoBanda
         string nome = LoopsVerificacao.VerificaNome();
         if (nome.Equals("/all"))
         {
-            foreach (var banda in bd.Avaliacoes)
+            foreach (var banda in bd.Avaliacoes.OrderByDescending(n => n.NotaBanda))
             {
                 banda.VisualizarInfo();
             }
