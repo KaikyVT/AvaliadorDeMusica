@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Runtime.Intrinsics.Arm;
 
 namespace AvaliarMusica.Controller;
@@ -26,9 +27,7 @@ public class LoopsVerificacao
             Console.Write("Digite a sua nota:\n> ");
             try
             {
-                double nota = double.Parse(Console.ReadLine()!);
-                if (nota % 1 != 0 || nota > 10)
-                    nota = nota / 10;
+                double nota = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
                 Console.WriteLine($"😺 -> Deseja avaliar com {nota}?");
                 Console.WriteLine("[1] Sim");
                 Console.WriteLine("[2] Não");
