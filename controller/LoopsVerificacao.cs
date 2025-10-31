@@ -22,25 +22,38 @@ public class LoopsVerificacao
     }
     public static double VerificaNota()
     {
+        double nota;
         while (true)
         {
             Console.Write("Digite a sua nota:\n> ");
-            try
+            if (double.TryParse(Console.ReadLine()!, NumberStyles.Any, CultureInfo.InvariantCulture, out nota))
             {
-                double nota = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-                Console.WriteLine($"😺 -> Deseja avaliar com {nota}?");
-                Console.WriteLine("[1] Sim");
-                Console.WriteLine("[2] Não");
-                int escolha = VerificarEscolha.Verificar(1, 2);
-                if (escolha == 1)
-                    return nota;
+                if (nota >= 0 && nota <= 10)
+                {
+                    Console.WriteLine($"😺 -> Deseja avaliar com {nota}?");
+                    Console.WriteLine("[1] Sim");
+                    Console.WriteLine("[2] Não");
+                    int escolha = VerificarEscolha.Verificar(1, 2);
+                    if (escolha == 1)
+                        return nota;
+                }
+                else
+                {
+                    Console.WriteLine("Digite uma nota de 0 a 10...");
+                    Thread.Sleep(1000);
+                    Console.Clear();
+                }
             }
-            catch
+            else
             {
-                Console.WriteLine("Você não digitou um número...");
+                Console.WriteLine("Digite um número...");
+                Thread.Sleep(1000);
+                Console.Clear();
             }
+
         }
     }
+
     public static List<string> VerificaAdicionarPro()
     {
         List<string> pros = new();
