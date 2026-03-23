@@ -20,7 +20,7 @@ public class AdicionarContra
             var contrasNovos = LoopsVerificacao.VerificaAdicionarContra();
             foreach (var contra in contrasNovos)
             {
-                bandaAddContra.AdicionarPro(contra);
+                bandaAddContra.AdicionarContra(contra);
             }
             bd.Salvar();
         }

@@ -20,7 +20,7 @@ public class AdicionarExtra
             var extrasNovos = LoopsVerificacao.VerificaAdicionarPro();
             foreach (var extra in extrasNovos)
             {
-                bandaAddExtra.AdicionarPro(extra);
+                bandaAddExtra.AdicionarExtra(extra);
             }
             bd.Salvar();
         }
