@@ -7,6 +7,7 @@ public class Menu
 {
     public static void iniciarMenu(BD bd)
     {
+        Console.Clear();
         int escolha = -1;
         while (escolha != 0)
         {

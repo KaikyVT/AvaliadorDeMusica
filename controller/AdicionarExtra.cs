@@ -17,7 +17,7 @@ public class AdicionarExtra
         if (bd.Avaliacoes.Any(n => n.NomeBanda.Equals(nome)) && escolha == 1)
         {
             var bandaAddExtra = bd.Avaliacoes.FirstOrDefault(n => n.NomeBanda.Equals(nome));
-            var extrasNovos = LoopsVerificacao.VerificaAdicionarPro();
+            var extrasNovos = LoopsVerificacao.VerificaAdicionarExtra();
             foreach (var extra in extrasNovos)
             {
                 bandaAddExtra.AdicionarExtra(extra);

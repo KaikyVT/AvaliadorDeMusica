@@ -21,6 +21,7 @@ public class MostrarInfoBanda
         }
         if (nome.Equals("/pagination"))
         {
+            Console.Clear();
             PaginacaoAvaliacoes.Paginacao(bd);
             return;
         }
